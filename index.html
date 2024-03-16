@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Travelo</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar navbar-expand-lg">
+        <div id="navbar-hero" class="container-fluid d-flex fixed-top pb-2">
+          <nav class="navbar-expand-lg">
+            <!-- <a class="navbar-brand d-lg-none" href="#"><i class="bi bi-bootstrap"></i></a> -->
+            <a class="navbar-brand d-none d-lg-block text-light fw-bolder" href="#">Travelo</a>
+          </nav>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link nav-isi d-lg-none fw-semibold text-light" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link nav-isi fw-semibold text-light" aria-current="page" id="loginBtn" type="button">Login</button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-isi fw-semibold text-light" href="#">Promo</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link nav-isi d-lg-none fw-semibold text-light" href="#">Settings</a>
+              </li>
+
+              <!-- DARKMODE -->
+              <li class="nav-item">
+                <a class="nav-link nav-isi" href="#">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="switchDarkmode">
+                    <label class="form-check-label" for="switchDarkmode"><i class="bi-moon-stars-fill darkMode"></i></label>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- SEARCH -->
+          <div>
+            <ul class="nav justify-content-lg-end mt-3">
+              <li class=" ">
+                <form class="d-flex sticky-top" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="nav-button" class="btn btn-success" type="submit">Search</button>
+              </form>
+              </li>
+            </ul>
+          </div>
+
+          <!-- BUTTON TOGGLER -->
+            <div>
+              <button class="navbar-toggler align-it-end mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="bi bi-three-dots-vertical text-light"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+    <!-- SECTION HEADER -->
+    <section id="section-header">
+      <div id="hero-header" class="container-fluid text-light rounded-bottom-5 pt-3"> 
+        <div class="container py-5">
+          <h1 class="text-center">Wujudkan Perjalananmu dengan Travelo!</h1>
+    
+                  <!-- SERVICES -->
+                  <!-- SM Display -->
+          <section class="services">
+            <div class="container text-center">
+              <div class="row row-cols-4 row-cols-lg-8 g-4 g-md-5 pt-3">
+                <div class="col-3 col-lg-1 me-lg-auto d-lg-none">
+                  <div class="card rounded-circle">
+                    <img src="img/hotel.png" class="card-img-top p-3 p-md-4" alt="hotel">
+                  </div>
+                  <p class="card-text">Hotel</p>
+                </div>
+
+                      <div class="col-3 col-lg-1 me-lg-auto d-lg-none">
+                        <div class="card rounded-circle">
+                          <img src="img/vacations.png" class="card-img-top p-3 p-md-4" alt="wisata">
+                        </div>
+                        <p class="card-text">Wisata</p>
+                      </div>
+                      <div class="col-3 col-lg-1 me-lg-auto d-lg-none">
+                        <div class="card rounded-circle">
+                          <img src="img/plane.png" class="card-img-top p-3 p-md-4" alt="pesawat">
+                        </div>
+                        <p class="card-text">Pesawat</p>
+                      </div>
+                      <div class="col-3 col-lg-1 me-lg-auto d-lg-none">
+                        <div class="card rounded-circle">
+                          <img src="img/train.png" class="card-img-top p-3 p-md-4" alt="kereta">
+                        </div>
+                        <p class="card-text">Kereta</p>
+                      </div>
+                      <div class="col-3 col-lg-1 me-lg-auto d-lg-none">
+                        <div class="card rounded-circle">
+                          <img src="img/bus-school.png" class="card-img-top p-3 p-md-4" alt="bus">
+                        </div>
+                        <p class="card-text">Bus</p>
+                      </div>
+                      <div class="col-3 col-lg-1 me-lg-auto d-lg-none">
+                        <div class="card rounded-circle">
+                          <img src="img/car-airport.png" class="card-img-top p-3 p-md-4" alt="taxiBandara">
+                        </div>
+                        <p class="card-text">Taxi Bandara</p>
+                      </div>
+                      <div class="col-3 col-lg-1 me-lg-auto d-lg-none">
+                        <div class="card rounded-circle">
+                          <img src="img/ship.png" class="card-img-top p-3 p-md-4" alt="kapal">
+                        </div>
+                        <p class="card-text">Kapal</p>
+                      </div>
+                      <div class="col-3 col-lg-1 d-lg-none">
+                        <div class="card rounded-circle">
+                          <img src="img/other.png" class="card-img-top p-3 p-md-4" alt="lainnya">
+                        </div>
+                        <p class="card-text">Lainnya</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                    <!-- LG Display -->
+                <section class="services">
+                  <div class="container text-center">
+                    <div class="row row-cols-lg-8 g-lg-3 mt-lg-5">
+                      <div class="col-3 col-lg-1 me-lg-auto d-none d-lg-block">
+                        <div id="card-hotel" class="card card-services">
+                          <i class="fa-solid fa-hotel icon-services"></i>
+                          <div class="card-body d-none d-lg-block">
+                            <p class="card-text text-center d-none d-lg-block">Hotel</p>
+                          </div>
+                        </div>
+                      </div>
+
+                          <div class="col-3 col-lg-1 me-lg-auto d-none d-lg-block">
+                            <div id="card-wisata" class="card card-services">
+                              <i class="fa-solid fa-umbrella-beach icon-services"></i>
+                              <div class="card-body d-none d-lg-block">
+                                <p class="card-text text-center p-0 d-none d-lg-block">Wisata</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-3 col-lg-1 me-lg-auto d-none d-lg-block">
+                            <div id="card-pesawat" class="card card-services">
+                              <i class="fa-solid fa-plane icon-services"></i>
+                              <div class="card-body d-none d-lg-block">
+                                <p class="card-text text-center p-0 d-none d-lg-block">Pesawat</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-3 col-lg-1 me-lg-auto d-none d-lg-block">
+                            <div id="card-kereta" class="card card-services">
+                              <i class="fa-solid fa-train-subway icon-services"></i>
+                              <div class="card-body d-none d-lg-block">
+                                <p class="card-text text-center p-0 d-none d-lg-block">Kereta</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-3 col-lg-1 me-lg-auto d-none d-lg-block">
+                            <div id="card-bus" class="card card-services">
+                              <i class="fa-solid fa-bus icon-services"></i>
+                              <div class="card-body d-none d-lg-block">
+                                <p class="card-text text-center p-0 d-none d-lg-block">Bus</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-3 col-lg-1 me-lg-auto d-none d-lg-block">
+                            <div id="card-taxi" class="card card-services">
+                              <i class="fa-solid fa-taxi icon-services"></i>
+                              <div class="card-body d-none d-lg-block">
+                                <p class="card-text text-center p-0 d-none d-lg-block">Taxi</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-3 col-lg-1 me-lg-auto d-none d-lg-block">
+                            <div id="card-kapal" class="card card-services">
+                              <i class="fa-solid fa-ship icon-services"></i>
+                              <div class="card-body d-none d-lg-block">
+                                <p class="card-text text-center p-0 d-none d-lg-block">Kapal</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-3 col-lg-1 d-none d-lg-block">
+                            <div id="card-lainnya" class="card card-services">
+                              <i class="fa-solid fa-caret-down icon-services"></i>
+                              <div class="card-body d-none d-lg-block">
+                                <p class="card-text text-center p-0 d-none d-lg-block">Lainnya</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </section>
+              
+              <section id="section-services">
+              <!--DESKRIPSI HOTEL -->
+                <section id="descHotel" class="d-none d-lg-none desc-services">
+                    <!-- SEARCH -->
+                  <div>
+                    <ul class="justify-content-center container mt-4">
+                      <h6 class="pb-2">Telusuri Hotel Pilihanmu :</h6>
+                      <li class="list-unstyled">
+                        <!-- KOTA -->
+                        <form class="d-flex sticky-top" role="search">
+                        <input class="form-control rounded-end-0" type="search" placeholder="Kota, tujuan, nama hotel" aria-label="Search">
+                        <!-- TANGGAL -->
+                        <form class="d-flex sticky-top" role="search">
+                        <input class="form-control rounded-0" type="search" placeholder="Tanggal Check-in & Check-out" aria-label="Search">
+                        <!-- TAMU -->
+                        <form class="d-flex sticky-top" role="search">
+                        <input class="form-control rounded-0" type="search" placeholder="Tamu dan Kamar" aria-label="Search">
+                        <!-- TOMBOL SEARCH -->
+                        <button class="btn searchButton rounded-start-0" type="submit"><i class="bi bi-search text-light"></i></button>
+                      </form>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+
+                <!--DESKRIPSI WISATA   -->
+              <section id="descWisata"  class="d-none d-lg-none desc-services">
+                  <!-- SEARCH -->
+                <div>
+                  <ul class="justify-content-center container mt-4">
+                    <h6 class="pb-2">Nikmati liburanmu dengan pengalaman baru!</h6>
+                    <li class="list-unstyled">
+                      <!-- TEMPAT/AKTIVITAS WISATA -->
+                      <form class="d-flex sticky-top" role="search">
+                      <input class="form-control rounded-end-0" type="search" placeholder="Apa yang kamu ingin lakukan di liburanmu?" aria-label="Search">
+                      <!-- TOMBOL SEARCH -->
+                      <button class="btn searchButton rounded-start-0" type="submit"><i class="bi bi-search text-light"></i></button>
+                    </form>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+
+              <!--DESKRIPSI PESAWAT -->
+              <section id="descPesawat"  class="d-none d-lg-none desc-services">
+                <!-- SEARCH -->
+                <div>
+                  <ul class="justify-content-center container mt-4">
+                    <h6>Pilih maskapai penerbangan kepercayaanmu</h6>
+
+                    <!-- GRID -->
+                    <div class="row">
+                      <div class="col-6 d-flex">
+                        <div class="d-block w-50">
+                          <!-- DARI -->
+                          <label for="A" class="headerGrid">Dari</label>
+                          <form class="d-flex sticky-top" role="search">
+                            <input class="form-control rounded-start-3 rounded-end-0" type="search" placeholder="Origin" aria-label="Search">
+                          </form>
+                        </div>
+
+                        <!-- KE -->
+                        <div class="d-block w-50">
+                          <label for="B" class="headerGrid">Ke</label>
+                            <form class="d-flex sticky-top" role="search">
+                              <input class="form-control rounded-start-0 rounded-end-3" type="search" placeholder="Destination" aria-label="Search">
+                            </form>
+                        </div>
+                      </div>
+
+                      <div class="col-6 d-flex">
+                        <!-- TANGGAL PERGI -->
+                          <div class="d-block w-50">
+                            <label for="C" class="headerGrid">Tanggal Pergi</label>
+                            <form class="d-flex sticky-top" role="search">
+                              <input class="form-control rounded-start-3 rounded-end-0 tanggalPergi" type="date" placeholder="3" aria-label="Search">
+                            </form>
+                          </div>
+
+                        <!-- TANGGAL PULANG -->
+                          <div class="d-block w-50">
+                              <div class="headerGrid">
+                                <input type="checkbox" class="me-2 checkboxTglPlg"><label for="D">Tanggal Pulang</label>
+                              </div>
+                              <form class="d-flex sticky-top" role="search">
+                                <input class="form-control rounded-start-0 rounded-end-3 tanggalPulang" type="date" placeholder="Tanggal" aria-label="Search" disabled>
+                              </form>
+                          </div>
+                        </div>
+                    </div>
+
+                        <!-- TOMBOL SEARCH -->
+                    <div class="text-center mt-2">
+                      <button class="btn searchButton rounded-3" type="submit">
+                        <i class="bi bi-search text-light"></i>
+                        <span class="text-light ps-2 fw-bold">Search</span>
+                      </button>
+                    </div>
+                </div>
+              </section>
+
+                <!--DESKRIPSI KERETA -->
+              <section id="descKereta" class="container d-none d-lg-none desc-services">
+                      
+                  <!-- SEARCH -->
+                <div class="container ">
+                    <h6 class="mt-4">Transportasi kereta :</h6>
+                  <div class="d-inline-flex">
+
+                          <!-- DARI -->
+                        <div class="d-block">
+                          <label for="A" class="headerGrid">Dari</label>
+
+                          <form class="d-flex sticky-top" role="search">
+                            <input class="form-control rounded-end-0" type="search" placeholder="Dari" aria-label="Search">
+                          </form>
+                        </div>
+
+                          <!-- KE -->
+                        <div class="d-block">
+                          <label for="B" class="headerGrid">Ke</label>
+
+                          <form class="d-flex sticky-top" role="search">
+                            <input class="form-control rounded-0" type="search" placeholder="Ke" aria-label="Search">
+                          </form>
+                        </div>
+
+                          <!-- TANGGAL BERANGKAT -->
+                        <div class="d-block">
+                          <label for="C" class="headerGrid">Tanggal Berangkat</label>
+
+                          <form class="d-flex sticky-top" role="search">
+                            <input class="form-control rounded-0 px-5 tanggalPergi" type="date" placeholder="Tanggal berangkat" aria-label="Date">
+                          </form>
+                        </div>
+
+                          <!-- TANGGAL PULANG -->
+                        <div class="d-block">
+                          <div class="headerGrid">
+                            <input type="checkbox" class="me-2 checkboxTglPlg"><label for="D">Tanggal Pulang</label>
+                          </div>
+
+                          <form class="d-flex sticky-top" role="search">
+                            <input class="form-control rounded-0 px-5 tanggalPulang" type="date" placeholder="Tanggal pulang(Beta)" aria-label="Date" disabled>
+                          </form>
+                        </div>
+
+                          <!-- PENUMPANG -->
+                        <div class="d-block">
+                          <label for="E" class="headerGrid">Penumpang</label>
+
+                          <form class="d-flex sticky-top" role="search">
+                            <input class="form-control rounded-0" type="search" placeholder="Jumlah kursi" aria-label="Search">
+                          </form>
+                        </div>
+
+                            <!-- TOMBOL SEARCH -->
+                        <div class="d-flex">
+                          <button class="btn searchButton rounded-start-0 mt-auto" type="submit"><i class="bi bi-search text-light"></i></button>
+                        </div>
+                    </div>
+                  </div>
+              </section>
+
+                <!--DESKRIPSI BUS -->
+                <section id="descBus" class="container d-none d-lg-none desc-services">
+                    
+                  <!-- SEARCH -->
+                <div class="container ">
+                    <h6 class="mt-4">Berpergian menggunakan bus pilihanmu</h6>
+                <div class="d-inline-flex">
+
+                        <!-- DARI -->
+                      <div class="d-block">
+                        <label for="A" class="headerGrid">Dari</label>
+
+                        <form class="d-flex sticky-top" role="search">
+                          <input class="form-control rounded-end-0" type="search" placeholder="Dari" aria-label="Search">
+                        </form>
+                      </div>
+
+                        <!-- KE -->
+                      <div class="d-block">
+                        <label for="B" class="headerGrid">Ke</label>
+
+                        <form class="d-flex sticky-top" role="search">
+                          <input class="form-control rounded-0" type="search" placeholder="Ke" aria-label="Search">
+                        </form>
+                      </div>
+
+                        <!-- TANGGAL BERANGKAT -->
+                      <div class="d-block">
+                        <label for="C" class="headerGrid">Tanggal Berangkat</label>
+
+                        <form class="d-flex sticky-top" role="search">
+                          <input class="form-control rounded-0 px-5 tanggalPergi" type="date" placeholder="Tanggal berangkat" aria-label="Date">
+                        </form>
+                      </div>
+
+                        <!-- TANGGAL PULANG -->
+                      <div class="d-block">
+                        <div class="headerGrid">
+                          <input type="checkbox" class="me-2 checkboxTglPlg"><label for="D">Tanggal Pulang</label>
+                        </div>
+
+                        <form class="d-flex sticky-top" role="search">
+                          <input class="form-control rounded-0 px-5 tanggalPulang" type="date" placeholder="Tanggal pulang(Beta)" aria-label="Date" disabled>
+                        </form>
+                      </div>
+
+                        <!-- PENUMPANG -->
+                      <div class="d-block">
+                        <label for="E" class="headerGrid">Penumpang</label>
+
+                        <form class="d-flex sticky-top" role="search">
+                          <input class="form-control rounded-0" type="search" placeholder="Jumlah kursi" aria-label="Search">
+                        </form>
+                      </div>
+
+                          <!-- TOMBOL SEARCH -->
+                      <div class="d-flex">
+                        <button class="btn searchButton rounded-start-0 mt-auto" type="submit"><i class="bi bi-search text-light"></i></button>
+                      </div>
+                  </div>
+                </div>
+              </section>
+
+            <!--DESKRIPSI TAXIBANDARA -->
+              <section id="descTaxiBandara" class="d-none d-lg-none desc-services">
+                  <!-- SEARCH -->
+                <div>
+                  <ul class="justify-content-center container mt-4">
+                    <h6 class="pb-2">Antar jemput dari dan atau ke bandara</h6>
+                    <li class="list-unstyled">
+                      <!-- DARI/KE -->
+                      <form class="d-flex sticky-top" role="search">
+                      <input class="form-control rounded-end-0" type="search" placeholder="Dari/Ke Bandara" aria-label="Search">
+                      <!-- ALAMAT -->
+                      <form class="d-flex sticky-top" role="search">
+                      <input class="form-control rounded-0" type="search" placeholder="Alamat/gedung" aria-label="Search">
+                      <!-- TANGGAL JEMPUT -->
+                      <form class="d-flex sticky-top" role="search">
+                      <input class="form-control rounded-0" type="search" placeholder="Tanggal jemput" aria-label="Search">
+                      <!-- WAKTU -->
+                      <form class="d-flex sticky-top" role="search">
+                      <input class="form-control rounded-0" type="search" placeholder="Waktu" aria-label="Search">
+                      <!-- TOMBOL SEARCH -->
+                      <button class="btn searchButton rounded-start-0" type="submit"><i class="bi bi-search text-light"></i></button>
+                    </form>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+ 
+              <!--DESKRIPSI KAPAL -->
+              <section id="descKapal"  class="d-none d-lg-none desc-services">
+                <!-- SEARCH -->
+              <div>
+                <ul class="justify-content-center container mt-4">
+                  <h6>Mari berlayar dengan kapal bajak laut favoritmu!</h6>
+
+                  <!-- GRID -->
+                  <div class="row">
+                    <div class="col-6 d-flex">
+                      <div class="d-block w-50">
+                        <!-- DARI -->
+                        <label for="A" class="headerGrid">Dari</label>
+                        <form class="d-flex sticky-top" role="search">
+                          <input class="form-control rounded-start-3 rounded-end-0" type="search" placeholder="Origin" aria-label="Search">
+                        </form>
+                      </div>
+
+                      <!-- KE -->
+                      <div class="d-block w-50">
+                        <label for="B" class="headerGrid">Ke</label>
+                          <form class="d-flex sticky-top" role="search">
+                            <input class="form-control rounded-start-0 rounded-end-3" type="search" placeholder="Destination" aria-label="Search">
+                          </form>
+                      </div>
+                    </div>
+
+                    <div class="col-6 d-flex">
+                      <!-- TANGGAL PERGI -->
+                        <div class="d-block w-50">
+                          <label for="C" class="headerGrid">Tanggal Pergi</label>
+                          <form class="d-flex sticky-top" role="search">
+                            <input class="form-control rounded-start-3 rounded-end-0 tanggalPergi" type="date" placeholder="3" aria-label="Search">
+                          </form>
+                        </div>
+
+                      <!-- TANGGAL PULANG -->
+                        <div class="d-block w-50">
+                            <div class="headerGrid">
+                              <input type="checkbox" class="me-2 checkboxTglPlg"><label for="D">Tanggal Pulang</label>
+                            </div>
+                            <form class="d-flex sticky-top" role="search">
+                              <input class="form-control rounded-start-0 rounded-end-3 tanggalPulang" type="date" placeholder="Tanggal" aria-label="Search" disabled>
+                            </form>
+                        </div>
+                      </div>
+                  </div>
+
+                      <!-- TOMBOL SEARCH -->
+                  <div class="text-center mt-3">
+                    <button class="btn searchButton rounded-3" type="submit">
+                      <i class="bi bi-search text-light"></i>
+                      <span class="text-light ps-2 fw-bold">Search</span>
+                    </button>
+                  </div>
+                </div>
+              </section>
+
+              <!--DESKRIPSI LAINNYA -->
+            <section id="descLainnya" class="d-none d-lg-none desc-services">
+              <!-- SEARCH -->
+            <div class="d-flex justify-content-center mt-5">
+                <h1><i class="bi bi-gear-wide-connected"></i> Maintenance..</h1>
+          </section>
+        </section>
+      </section>
+           
+            
+    
+
+
+
+<!-- SECTION 1 -->
+
+  <!-- MOST DESTINATION -->
+<section id="section-mostDestination" class="d-none d-lg-block">
+  <div class="container-fluid">
+    <div class="container">
+      <h3 class="pt-5">Temukan yang kamu suka dari Grand Line hingga New World!</h3>
+    <div class="py-3">
+        <div class="row g-3">
+          <div class="col-4 destinasi">
+            <div class="card">
+              <img src="img/destinasi/alabasta.jpg" alt="">
+              <div class="card-img-overlay text-light">
+                <h2 class="">Alabasta</h2>
+                <p>713 accomodations</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 destinasi">
+            <div class="card">
+              <img src="img/destinasi/skypiea.jpg" alt="">
+              <div class="card-img-overlay text-light">
+                <h2 class="">Skypiea</h2>
+                <p>232 accomodations</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 destinasi">
+            <div class="card">
+              <img src="img/destinasi/water7.jpg" alt="">
+              <div class="card-img-overlay text-light">
+                <h2 class="">Water 7</h2>
+                <p>24,381 accomodations</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 destinasi">
+            <div class="card">
+              <img src="img/destinasi/fm.jpg" alt="">
+              <div class="card-img-overlay text-light">
+                <h2 class="">Fishman Island</h2>
+                <p>8,754 accomodations</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 destinasi">
+            <div class="card">
+              <img src="img/destinasi/dressrosa.jpg" alt="">
+              <div class="card-img-overlay text-light">
+                <h2 class="">Dressrosa</h2>
+                <p>40,218 accomodations</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 destinasi">
+            <div class="card">
+              <img src="img/destinasi/wano.jpg" alt="">
+              <div class="card-img-overlay text-light">
+                <h2 class="">Wano</h2>
+                <p>819 accomodations</p>
+              </div>
+            </div>
+          </div>
+        </section>  
+
+          <!-- ARTICLE -->
+<section id="section-artikel" class="d-none d-lg-block">
+  <div class="container">
+      <!-- class h3 hapus (?) -->
+    <h3 class="pt-5 mt-2">Yuk baca untuk bangkitin semangat liburanmu!</h3>
+    <div class="py-3">
+        <div class="row g-3">
+          <div class="col-3 artikel">
+            <div class="card artikelCard">
+              <img src="img/artikel/artikel-makan.jpg" class="card-img-top" alt="...">
+              <div class="card-body artikelText">
+                <p class="card-text"><strong>Makanan spesial apa saja sih yang ada di destinasi wisatamu? Ini rekomendasinya!</strong></p>
+                <p id="penulis">Vinsmoke Sanji</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 artikel">
+            <div class="card artikelCard">
+              <img src="img/artikel/artikel-zoro.jpg" class="card-img-top" alt="...">
+              <div class="card-body artikelText">
+                <p class="card-text"><strong>Mari lihat pedang legendaris yang ada di Wano!</strong></p>
+                <p id="penulis">Roronoa Zoro</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 artikel">
+            <div class="card artikelCard">
+              <img src="img/artikel/artikel-cuaca.jpg" class="card-img-top" alt="...">
+              <div class="card-body artikelText">
+                <p class="card-text"><strong>Khawatir cuaca buruk dijadwal liburanmu? Berikut prediksi cuacanya.</strong></p>
+                <p id="penulis">Nami</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 artikel">
+            <div class="card artikelCard">
+              <img src="img/artikel/artikel-sejarah.jpg" class="card-img-top" alt="...">
+              <div class="card-body artikelText">
+                <p class="card-text"><strong>Suka dengan sejarah? Ini rekomendasi tempat wisata bersejarah buat kamu!</strong></p>
+                <p id="penulis">Nico Robin</p>
+              </div>
+            </div>
+          </div>
+    </section> 
+
+        <!-- WHY TRAVELO? -->
+<section id="section-why">
+  <div class="container">
+    <h3>Kenapa Travelo?</h3>
+    <div class="row py-3 d-block d-lg-flex g-3">
+      <div class="col-md">
+        <div class="card">
+          <div class="row wt">                   
+              <div class="col-4 p-3">
+              <img src="img/whytravelo/kebutuhan.svg" class="img-fluid " alt="kebutuhan">
+            </div>
+            <div class="col-7 text-justify paragrafWhy">
+              <p class="titleWhy card-title"><strong>Semua keperluanmu di satu tempat!</strong></p>
+              <p class="textWhy card-text">Dari tiket pesawat, penginapan, sampai aktivitas, Travelo punya produk lengkap dan Panduan Wisata  yang pas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+          <div class="col-md">
+            <div class="card">
+              <div class="row wt d-flex">                   
+                <div class="col-4 p-3">
+                    <img src="img/whytravelo/opsi.svg" class="img-fluid " alt="opsi">
+                </div>
+                <div class="col-7 text-justify p-2 paragrafWhy">
+                  <p class="titleWhy card-title"><strong>Opsi pesanan yang fleksibel</strong></p>
+                  <p class="textWhy card-text">Perlu jaga-jaga buat yang tak terduga? Tenang, ada Easy Reschedule  &  Refund.</p>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <div class="row wt text-wrap">                   
+                <div class="col-4 p-3">
+                    <img src="img/whytravelo/secure.svg" class="img-fluid " alt="keamanan">
+                </div>
+                <div class="col-7 text-justify paragrafWhy">
+                  <p class="titleWhy card-title"><strong>Pembayaran yang aman</strong></p>
+                  <p class="textWhy card-text">Nikmati transaksi dengan keamanan berlapis, serta beragam opsi pembayaran global & nasional.</p>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION KONTAK -->
+    <section id="section-kontak">
+      <div class="container-fluid text-light p-5 mt-2 kontak">
+          <div class="container">
+              <div class="row g-0 align-items-center"> 
+                <div class="col-4 d-none d-lg-block p-3">
+                  <img src="img/logo.png" class="img-fluid " alt="logo">
+                </div>
+
+                <!-- KONTAK -->
+
+                <div class="col-md col-8 text-justify p-3">
+                  <h2>Hubungi kami :</h2>
+                  <ul class="list-group list-group-flush" lead>
+                    <li class="list-group-item listKontak text-light">
+                      <i class="bi bi-geo-alt pe-2"></i>
+                      <span class="fw-bold">Location :</span>
+                      East Blue, Syrup Village
+                    </li>
+                    <li class="list-group-item listKontak text-light">
+                      <i class="bi bi-telephone pe-2"></i>
+                      <span class="fw-bold">Mobile Phone :</span>
+                      081 234 567
+                    </li>
+                    <li class="list-group-item listKontak text-light">
+                      <i class="bi bi-envelope pe-2"></i>
+                      <span class="fw-bold">Email :</span>
+                      email@travelo.com
+                    </li>
+                  </ul>
+                </div>           
+
+                <!--  SOSMED-->
+                
+                <div class="col-md col-8 text-justify p-3">
+                  <h2>Follow kami di :</h2>
+                  <ul class="list-group list-group-flush" lead>
+                    <li class="list-group-item listKontak text-light fb">
+                      <i class="bi bi-facebook pe-2 fb-icon"></i>
+                      <span>Facebook</span>
+                    </li>
+                    <li class="list-group-item listKontak text-light ig">
+                      <i class="bi bi-instagram pe-2 ig-icon"></i>
+                      <span>Instagram</span>
+                    </li>
+                    <li class="list-group-item listKontak text-light twitter">
+                      <i class="bi bi-twitter-x pe-2 twitter-icon"></i>
+                      <span>Twitter</span>
+                    </li>
+                  </ul>
+                </div>                  
+              </div>
+          </div>                
+      </div>
+    </section>
+
+<!-- FOOTER -->
+<footer class="p-2 bg-dark text-light text-center">
+  <div class="container">
+    <p>Copyright &copy; 2024 Travelo. All rights reserved</p>
+  </div>
+
+</footer>
+
+<!-- FORM LOGIN/REGIS -->
+<div id="overlay" class="d-lg-none"></div>
+<div class="loginContainer d-lg-none" id="main">
+  <div class="sign-up">
+    <form action="#" class="formRegLog p-5 pos-relative">
+      <label class="closeBtn" for="close" style="position: absolute;top: 10px;right: 20px; font-weight: bold;">x</label>
+      <h1 class="mt-3" style="font-size:xx-large;">Create Account</h1>
+      <div class="social-container">
+        <a href="#" class="social aLogin"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social aLogin"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="social aLogin"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p class="pLogin">or use your email for registration</p>
+      <input type="text" name="txt" placeholder="Name" required="" class="inputLogin">
+      <input type="email" name="email" placeholder="Email" required="" class="inputLogin">
+      <input type="password" name="pswd" placeholder="Password" required="" class="inputLogin">
+      <button class="buttonLogin">Sign Up</button>
+    </form>
+  </div>
+  <div class="sign-in">
+    <form action="#" class="formRegLog">
+      <h1 class="m-0" style="font-size:xx-large;">Sign in</h1>
+      <div class="social-container">
+        <a href="#" class="social aLogin"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social aLogin"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="social aLogin"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p class="pLogin">or use your account</p>
+      <input type="email" name="email" placeholder="Email" required="" class="inputLogin">
+      <input type="password" name="pswd" placeholder="Password" required="" class="inputLogin">
+      <a href="#" class="aLogin">Forget your Password?</a>
+      <button class="buttonLogin">Sign In</button>
+    </form>
+  </div>
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-left">
+        <h1>Selamat datang di Travelo!</h1>
+        <p class="pLogin">Masuk untuk mulai menjelajahi tujuan wisata impianmu!</p>
+        <button id="signIn" class="buttonLogin">Sign In</button>
+      </div>
+      <div class="overlay-right pos-relative">
+        <label class="closeBtn" for="close" style="position: absolute;top: 10px;right: 20px; font-weight: bold;">x</label>
+        <h1>Belum punya akun?</h1>
+        <p class="pLogin">Masukkan data dirimu disini!</p>
+        <button id="signUp" class="buttonLogin">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+      
+
+      
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+</body>
+</html>
